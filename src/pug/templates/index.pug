@@ -1,0 +1,31 @@
+doctype html
+html(class='page home', lang='ru')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		block meta
+			title This is home!!!
+		link(rel='stylesheet', href='./css/style.css')
+		link(rel='stylesheet', href='./css/style_home.css')
+	body
+		include ../includes/header.pug
+		main
+			aside
+				include ../includes/header.pug
+			article
+				div.column.column-xl-3.column-m-1
+					section.article
+						include ../includes/article_on_main.pug
+					section.adv
+						include ../includes/adv_on_main.pug
+				div.column.column-xl-3.column-m-1
+					section.article
+						include ../includes/article_on_main.pug
+					section.article
+						include ../includes/article_on_main.pug
+				div.column.column-xl-3.column-m-1
+					section.article
+						include ../includes/article_on_main.pug
+					section.article
+						include ../includes/article_on_main.pug
+		include ../includes/footer.pug

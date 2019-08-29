@@ -1,0 +1,20 @@
+div#comments
+	block comments_quantity
+	section.message
+		.avatar
+		input.message_body(placeholder="Leave a message...")
+		.stars 0
+	section.choosing_comments_type
+		.left_part
+			.item.active.dropdown Discussion
+			.item Community
+			.item My Disqus
+		.right_part
+			.item.dropdown Share
+			.item.settings.dropdown
+	section.comments_body
+		block comments_body
+	section.comments_actions.clearfix
+		.feed Comment feed
+		.subscribe Subscribe via email
+		.disqus.clearfix

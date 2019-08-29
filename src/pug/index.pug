@@ -1,0 +1,77 @@
+doctype html
+html(class='page', lang='ru')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title Extraordinary
+		link(rel='stylesheet', href='./css/style.css')
+		script(src='./js/jquery-3.4.1.min.js')
+	body
+		include ./includes/header.pug
+		main
+			aside.left_menu
+				include ./includes/menu.pug
+			#main_content
+				article.home_page
+					section.column.column-xl-3.column-l-1
+						figure#article1.article
+							.image
+								a.link_to_page(href="article1.html")
+									img(src="./img/article1.jpg", alt="article1")
+									.hover
+										.more Read more
+							figcaption
+								time(datetime="2013-07-27") 27 July 2013
+								.comments 14 Comments
+								h2 All sail being set, he now cast loose the life-line, reserved.
+								p Soon all the boats but Starbuck's were dropped; all the boat-sails set all the paddles plying; with rippling swiftness, shooting to leeward; and Ahab heading the onset. A pale, death-glimmer lit up Fedallah's sunken eyes; a hideous motion.
+						figure#adv1.adv
+							a(href="#")
+								img(src="./img/adv1.jpeg", alt="advertising1")
+					section.column.column-xl-3.column-l-1
+						figure#article2.article
+							.image
+								a.link_to_page(href="article2.html")
+									img(src="./img/article2.jpg", alt="article2")
+									.hover
+										.more Read more
+							figcaption
+								time(datetime="2013-07-25") 25 July 2013
+								.comments 2 Comments
+								h2 Robin Thicke: Longest Hot 100 Reign This Year
+								p The line originally used in the fishery was of the best hemp, slightly vapoured with tar, not impregnated with it, as in the case of ordinary ropes; for while tar, as ordinarily used, makes the hemp more pliable to the rope-maker, Of late years the Manilla rope has in the American fishery almost entirely superseded hemp as.
+						figure#article4.article
+							.image
+								a.link_to_page(href="article4.html")
+									img(src="./img/article4.jpg", alt="article4")
+									.hover
+										.more Read more
+							figcaption
+								time(datetime="2013-07-25") 25 July 2013
+								.comments 2 Comments
+								h2 A Strange Brand of Happy
+								p An aimless bachelor loses his job and finds himself chasing the same girl (his new life coach) that his manipulative ex-boss is after as well. The boys are spurred on by a rag tag group of retirees in need of some action.
+					section.column.column-xl-3.column-l-1
+						figure#article3.article
+							.image
+								a.link_to_page(href="article3.html")
+									img(src="./img/article3.jpg", alt="article3")
+									.hover
+										.more Read more
+							figcaption
+								time(datetime="2013-07-25") 25 July 2013
+								.comments 6 Comments
+								h2 A-Rod, A Fraud, And A Waste Of Yankees Money, Public's Time
+								p Enough already.  I can’t take it no more.  Free us from enslavement to all this banter. OK, so my fit of anger this morning is not steroid-induced…though that would be fitting in light of recent discussions. Baseball talk of late has centered upon performance enhancing drugs. Biogenesis has become the new BALCO.  A-Rod the new Barry Bonds. And all I hear from various media types are questions like.
+						figure#article5.article
+							.image
+								a.link_to_page(href="article5.html")
+									img(src="./img/article5.jpg", alt="article5")
+									.hover
+										.more Read more
+							figcaption
+								time(datetime="2013-07-25") 25 July 2013
+								.comments 2 Comments
+								h2 The whale-line is only two-thirds of an inch in thickness
+								p At first sight, you would not think it so strong as it really is. By experiment its one and fifty yarns will each suspend a weight of one hundred and twenty pounds; so that the whole rope will bear a strain nearly equal to three tons. 
+		include ./includes/footer.pug

@@ -1,0 +1,41 @@
+doctype html
+html(class='page', lang='ru')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		block meta
+			title This is article title!
+		link(rel='stylesheet', href='./css/style.css')
+		script(src='./js/jquery-3.4.1.min.js')
+	body
+		include ../includes/header.pug
+		main
+			aside.left_menu
+				include ../includes/menu.pug
+			#main_content
+				article.article_page
+					section.main_content
+						.top_image
+							block top_image
+						.content
+							section.article_info
+								.date
+									h3 Date
+									block info_date
+								.comments
+									h3 Comments
+									block info_comments
+								.share
+									h3 Share
+									nav
+										a(href="#").fb_big
+										a(href="#").tw_big
+										a(href="#").gg_big
+										a(href="#").pt_big
+							section.article_body
+								block content
+								include ../includes/comments.pug
+					aside.right_switcher
+						nav.article_switcher
+							block arrows
+		include ../includes/footer.pug
